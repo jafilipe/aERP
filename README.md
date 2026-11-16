@@ -21,10 +21,12 @@ O **aERP** liga-se à base de dados SQL Server do PHC, carrega os dados de venda
 
 ## Descarregar
 
-Os ficheiros para experimentar estão na secção **[Releases](../../releases)**:
+Os ficheiros para experimentar estão na pasta **[`downloads/`](downloads)**:
 
-- **`aERP_Setup_1.0.0.exe`** — instalador do aERP (livro + suplemento + lista de códigos postais).
-- **`Video aERP.mp4`** — vídeo explicativo que percorre as principais funcionalidades.
+- **[`aERP_Setup_1.0.0.exe`](downloads/aERP_Setup_1.0.0.exe)** (7,1 MB): instalador do aERP (livro + suplemento + lista de códigos postais).
+- **[`Video aERP.mp4`](downloads/Video%20aERP.mp4)** (97,5 MB): vídeo explicativo que percorre as principais funcionalidades.
+
+Para descarregar, abra o ficheiro e carregue em **Download raw file** (ícone ⤓).
 
 > Dados sensíveis (servidor, base de dados, credenciais) são de demonstração nos materiais publicados.
 
