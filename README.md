@@ -34,23 +34,9 @@ Para descarregar, abra o ficheiro e carregue em **Download raw file** (ícone �
 
 ## Como funciona
 
-```
-  SQL Server (PHC)                aERP_Addin.xlam                 aERP.xlsm
-  ┌───────────────┐   SELECT     ┌────────────────┐   CSV temp.  ┌────────────────────┐
-  │ ft, fi, fo,   │ ───────────▶ │ Configuração   │ ───────────▶ │ Power Query (M)    │
-  │ cl, fl, st,   │  por tabela  │ Sincronização  │              │        ▼           │
-  │ para1 ...     │  (ADO)       │ Licenças       │              │ Power Pivot (DAX)  │
-  └───────────────┘              └───────┬────────┘              │        ▼           │
-                                         │                       │ Funções CUBE       │
-       Google Sheet (licença/log) ◀──────┘                       │        ▼           │
-       via Google Apps Script                                    │ Dashboards/Consultas│
-                                                                 └────────────────────┘
-```
-
-1. O suplemento executa um `SELECT` por tabela no SQL Server do PHC e grava o resultado num **CSV temporário** (sem o limite de linhas de uma folha).
-2. O **Power Query** lê o CSV, aplica os tipos e carrega para o **Power Pivot**.
-3. Os dashboards usam funções **CUBE** e tabelas dinâmicas OLAP sobre o modelo.
-4. A licença é validada a cada arranque numa Google Sheet (via Google Apps Script), com tolerância em modo sem ligação.
+1. Indica-se o servidor e a base de dados do PHC e carrega-se em **Guardar**. O nome e o logótipo da empresa são lidos do PHC.
+2. Em **Sincronizar dados**, o aERP lê do PHC as vendas, compras, clientes, fornecedores e artigos e carrega-os no modelo de dados do Excel.
+3. Os dashboards, as consultas e as comparações atualizam-se sozinhos, já com os dois anos mais recentes escolhidos.
 
 ---
 
@@ -58,25 +44,19 @@ Para descarregar, abra o ficheiro e carregue em **Download raw file** (ícone �
 
 - Windows com **Excel 365 / 2021 de 64 bits** (com Power Pivot).
 - Acesso de rede ao **SQL Server do PHC**.
-- Ligação à Internet para validar a licença (com tolerância offline).
+- Ligação à Internet.
 
 ---
 
 ## Documentação
 
-- [`docs/aERP_visao_geral.md`](docs/aERP_visao_geral.md) — visão geral completa: arquitetura, modelo de dados, funcionalidades, suplemento, instalador, tecnologias, limitações e guião do vídeo.
+- [`docs/aERP_visao_geral.md`](docs/aERP_visao_geral.md) — visão geral: como funciona, dados disponíveis, funcionalidades, instalação e tecnologias.
 
 ---
 
 ## Tecnologias
 
-Power Pivot (modelo, DAX) · Power Query (M) · funções CUBE e segmentações OLAP · VBA (UserForms, ADO, eventos de livro) · SQL Server (PHC) · Google Apps Script + Google Sheets (licenças) · Inno Setup (instalador).
-
----
-
-## Estado
-
-Projeto em desenvolvimento. O instalador ainda não foi testado num PC de cliente final. Ver as limitações conhecidas e o trabalho futuro na [visão geral](docs/aERP_visao_geral.md#8-limitações-conhecidas-e-trabalho-futuro).
+Power Pivot (modelo, DAX) · Power Query (M) · funções CUBE e segmentações OLAP · VBA (formulários, ADO, eventos de livro) · SQL Server (PHC) · Inno Setup (instalador).
 
 ---
 
