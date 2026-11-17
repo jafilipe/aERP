@@ -99,7 +99,8 @@ Outros pormenores:
 O instalador `aERP_Setup_1.0.0.exe` não precisa de administrador e:
 - copia o livro, o suplemento e a lista de códigos postais para `Documentos\aERP`;
 - regista o suplemento no Excel e autoriza as macros da pasta do aERP;
-- cria os atalhos.
+- cria os atalhos;
+- verifica se o **Microsoft OLE DB Driver 18 para SQL Server** está instalado e, se faltar, instala-o (x64 em Windows de 64 bits, que inclui também o de 32 bits; x86 em Windows de 32 bits). Só este passo pede autorização de administrador ao Windows. Sem o driver, o teste de ligação dá o erro *"3706 - Não foi encontrado o fornecedor"*.
 
 A desinstalação remove o registo.
 

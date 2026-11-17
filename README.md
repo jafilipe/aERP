@@ -15,7 +15,7 @@ O **aERP** liga-se à base de dados SQL Server do PHC, carrega os dados de venda
 - **Folhas de consulta**: uma lista completa por tabela, com os mesmos filtros do dashboard, criada só quando é aberta (para a sincronização ser rápida).
 - **Filtros fáceis**: segmentações compactas para campos pequenos e botões de lista com pesquisa e escolha múltipla para campos grandes; campos sem dados escondem-se sozinhos.
 - **Nome e logótipo da empresa** lidos automaticamente do próprio PHC.
-- **Pronto a instalar**: um instalador regista o suplemento, cria o local fidedigno das macros e copia tudo para a pasta do utilizador, sem precisar de administrador.
+- **Pronto a instalar**: um instalador regista o suplemento, cria o local fidedigno das macros e copia tudo para a pasta do utilizador sem precisar de administrador. Se faltar o driver de ligação ao SQL Server, instala-o também.
 
 ---
 
@@ -23,10 +23,13 @@ O **aERP** liga-se à base de dados SQL Server do PHC, carrega os dados de venda
 
 Os ficheiros para experimentar estão na pasta **[`downloads/`](downloads)**:
 
-- **[`aERP_Setup_1.0.0.exe`](downloads/aERP_Setup_1.0.0.exe)** (7,1 MB): instalador do aERP (livro + suplemento + lista de códigos postais).
+- **[`aERP_Setup_1.0.0.exe`](downloads/aERP_Setup_1.0.0.exe)** (15,4 MB): instalador do aERP (livro + suplemento + lista de códigos postais + Microsoft OLE DB Driver 18 para SQL Server).
+- **[`Microsoft OLE DB para SQL Server 18.7.6.zip`](downloads/Microsoft%20OLE%20DB%20para%20SQL%20Server%2018.7.6.zip)** (8,7 MB): o mesmo driver, para instalar à parte se for preciso.
 - **[`Video aERP.mp4`](downloads/Video%20aERP.mp4)** (97,5 MB): vídeo explicativo que percorre as principais funcionalidades.
 
 Para descarregar, abra o ficheiro e carregue em **Download raw file** (ícone ⤓).
+
+> **Driver de ligação ao SQL Server:** o aERP liga-se ao PHC através do **Microsoft OLE DB Driver 18 para SQL Server**. Se este driver não estiver instalado, o teste de ligação dá o erro *"3706 - Não foi encontrado o fornecedor"*. O instalador verifica-o e, se faltar, instala-o no fim (versão de 64 bits, que inclui também a de 32 bits, ou de 32 bits num Windows de 32 bits). Só neste passo o Windows pede autorização de administrador. Se o computador não tiver permissões de administrador, peça ao responsável informático para instalar o driver (ficheiro `.zip` acima).
 
 > Dados sensíveis (servidor, base de dados, credenciais) são de demonstração nos materiais publicados.
 
@@ -43,6 +46,7 @@ Para descarregar, abra o ficheiro e carregue em **Download raw file** (ícone �
 ## Requisitos
 
 - Windows com **Excel 365 / 2021 de 64 bits** (com Power Pivot).
+- **Microsoft OLE DB Driver 18 para SQL Server** (instalado pelo `aERP_Setup` se faltar).
 - Acesso de rede ao **SQL Server do PHC**.
 - Ligação à Internet.
 
