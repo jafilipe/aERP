@@ -11,8 +11,10 @@ O **aERP** liga-se à base de dados SQL Server do PHC, carrega os dados de venda
 - **Liga-se ao PHC** (SQL Server) e traz as tabelas de movimentos e fichas para um modelo Power Pivot, sem o utilizador escrever SQL.
 - **7 dashboards** com o mesmo aspeto (Vendas, Vendas por Artigo, Compras, Compras por Artigo, Clientes, Fornecedores, Artigos): KPIs, gráficos por mês, tops 10, margem bruta, distribuição por distrito/concelho/país e por tipo, vendedor ou família.
 - **Comparação de anos**: escolhe um ou dois anos e todos os gráficos passam a comparar (barras com duas séries, donuts com dois anéis, títulos "2026 vs 2025"); o ano escolhido é sincronizado entre todas as folhas.
+- **Período**: analisar o ano completo, até ao mês atual, até ao fim do mês, um trimestre ou um semestre; as comparações e os títulos acompanham o período escolhido.
+- **Resumo com indicadores**: a página inicial mostra os cartões de indicadores do ano mais recente, ao lado da visão geral dos gráficos.
 - **Comparação anual ao estilo PHC**: tabela mês a mês com acumulados, desvios em valor e em %, rentabilidade e setas ▲▼, com detalhe por cliente, fornecedor ou artigo.
-- **Folhas de consulta**: uma lista completa por tabela, com os mesmos filtros do dashboard, criada só quando é aberta (para a sincronização ser rápida).
+- **Folhas de consulta**: uma lista completa por tabela, com os mesmos filtros do dashboard, criada só quando é aberta (para a sincronização ser rápida), e **Ordenar por** qualquer coluna, de A a Z ou de Z a A, com regresso à ordem original.
 - **Filtros fáceis**: segmentações compactas para campos pequenos e botões de lista com pesquisa e escolha múltipla para campos grandes; campos sem dados escondem-se sozinhos.
 - **Nome e logótipo da empresa** lidos automaticamente do próprio PHC.
 - **Pronto a instalar**: um instalador regista o suplemento, cria o local fidedigno das macros e copia tudo para a pasta do utilizador sem precisar de administrador. Se faltar o driver de ligação ao SQL Server, instala-o também.
@@ -23,11 +25,13 @@ O **aERP** liga-se à base de dados SQL Server do PHC, carrega os dados de venda
 
 Os ficheiros para experimentar estão na pasta **[`downloads/`](downloads)**:
 
-- **[`aERP_Setup_1.0.0.exe`](downloads/aERP_Setup_1.0.0.exe)** (15,4 MB): instalador do aERP (livro + suplemento + lista de códigos postais + Microsoft OLE DB Driver 18 para SQL Server).
+- **[`aERP_Setup_1.0.0.zip`](downloads/aERP_Setup_1.0.0.zip)** (14,9 MB): instalador do aERP (livro + suplemento + lista de códigos postais + Microsoft OLE DB Driver 18 para SQL Server).
 - **[`Microsoft OLE DB para SQL Server 18.7.6.zip`](downloads/Microsoft%20OLE%20DB%20para%20SQL%20Server%2018.7.6.zip)** (8,7 MB): o mesmo driver, para instalar à parte se for preciso.
-- **[`Video aERP.mp4`](downloads/Video%20aERP.mp4)** (97,5 MB): vídeo explicativo que percorre as principais funcionalidades.
+- **[`Video aERP.mp4`](downloads/Video%20aERP.mp4)** (89,7 MB): vídeo explicativo que percorre as principais funcionalidades.
 
 Para descarregar, abra o ficheiro e carregue em **Download raw file** (ícone ⤓).
+
+**Instalar:** descarregue o `aERP_Setup_1.0.0.zip`, extraia-o (botão direito > **Extrair tudo**) e execute o `aERP_Setup_1.0.0.exe`.
 
 > **Driver de ligação ao SQL Server:** o aERP liga-se ao PHC através do **Microsoft OLE DB Driver 18 para SQL Server**. Se este driver não estiver instalado, o teste de ligação dá o erro *"3706 - Não foi encontrado o fornecedor"*. O instalador verifica-o e, se faltar, instala-o no fim (versão de 64 bits, que inclui também a de 32 bits, ou de 32 bits num Windows de 32 bits). Só neste passo o Windows pede autorização de administrador. Se o computador não tiver permissões de administrador, peça ao responsável informático para instalar o driver (ficheiro `.zip` acima).
 
