@@ -16,7 +16,7 @@ O **aERP** liga-se à base de dados SQL Server do PHC, carrega os dados de venda
 - **7 dashboards** com o mesmo aspeto (Vendas, Vendas por Artigo, Compras, Compras por Artigo, Clientes, Fornecedores, Artigos): KPIs, gráficos por mês, tops 10, margem bruta, distribuição por distrito/concelho/país e por tipo, vendedor ou família.
 - **Comparação de anos**: escolhe um ou dois anos e todos os gráficos passam a comparar (barras com duas séries, donuts com dois anéis, títulos "2026 vs 2025"); o ano escolhido é sincronizado entre todas as folhas.
 - **Período**: analisar o ano completo, até ao mês atual, até ao fim do mês, um trimestre ou um semestre; as comparações e os títulos acompanham o período escolhido.
-- **Resumo com indicadores**: a página inicial mostra os cartões de indicadores do ano mais recente, ao lado da visão geral dos gráficos.
+- **Cartões de indicadores do ano mais recente**: nos dashboards de Vendas, Vendas por Artigo, Compras e Compras por Artigo, os cartões no topo e o título mostram o ano mais recente escolhido, enquanto os gráficos comparam os dois anos.
 - **Comparação anual ao estilo PHC**: tabela mês a mês com acumulados, desvios em valor e em %, rentabilidade e setas ▲▼, com detalhe por cliente, fornecedor ou artigo.
 - **Folhas de consulta**: uma lista completa por tabela, com os mesmos filtros do dashboard, criada só quando é aberta (para a sincronização ser rápida), e **Ordenar por** qualquer coluna, de A a Z ou de Z a A, com regresso à ordem original.
 - **Filtros fáceis**: segmentações compactas para campos pequenos e botões de lista com pesquisa e escolha múltipla para campos grandes; campos sem dados escondem-se sozinhos.
