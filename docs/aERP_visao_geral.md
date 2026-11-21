@@ -52,7 +52,6 @@ Sobre estes dados existem cerca de 76 medidas: vendas líquidas, compras líquid
 *Ecrã Resumo: visão geral dos gráficos principais, barra lateral com a empresa, filtros e navegação.*
 
 - Página inicial com uma **visão geral** dos gráficos principais de cada dashboard.
-- **Cartões de indicadores** do ano mais recente no topo do resumo.
 - Barra lateral com **logótipo e nome da empresa**, filtro de **Ano**, botão **Período**, botões para todos os dashboards e consultas, **Configuração** e **Sincronizar dados**.
 
 ### 4.2 Dashboards (7)
@@ -81,6 +80,7 @@ Outros pormenores:
 ### 4.4 Comparação de anos
 - O filtro **Ano** aceita um ou dois anos, e o ano escolhido passa para todas as folhas.
 - Com dois anos, **todos os gráficos comparam**: barras com duas séries, circulares com dois anéis e títulos "2026 vs 2025".
+- Nos dashboards de Vendas, Vendas por Artigo, Compras e Compras por Artigo, os **cartões de indicadores** no topo e o título mostram o **ano mais recente** escolhido, enquanto os gráficos comparam os dois anos.
 - Os tops 10 são ordenados pelo ano mais recente.
 - Botão **Período** para analisar o **ano completo**, **até ao mês atual**, **até ao fim do mês**, um **trimestre** ou um **semestre**. As comparações usam o mesmo período nos dois anos e os títulos indicam o período escolhido.
 
