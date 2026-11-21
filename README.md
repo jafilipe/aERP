@@ -30,14 +30,19 @@ O **aERP** liga-se à base de dados SQL Server do PHC, carrega os dados de venda
 Os ficheiros para experimentar estão na pasta **[`downloads/`](downloads)**:
 
 - **[`aERP_Setup_1.0.0.zip`](downloads/aERP_Setup_1.0.0.zip)** (14,9 MB): instalador do aERP (livro + suplemento + lista de códigos postais + Microsoft OLE DB Driver 18 para SQL Server).
-- **[`Microsoft OLE DB para SQL Server 18.7.6.zip`](downloads/Microsoft%20OLE%20DB%20para%20SQL%20Server%2018.7.6.zip)** (8,7 MB): o mesmo driver, para instalar à parte se for preciso.
 - **[`Video aERP.mp4`](downloads/Video%20aERP.mp4)** (89,7 MB): vídeo explicativo que percorre as principais funcionalidades.
 
 Para descarregar, abra o ficheiro e carregue em **Download raw file** (ícone ⤓).
 
 **Instalar:** descarregue o `aERP_Setup_1.0.0.zip`, extraia-o (botão direito > **Extrair tudo**) e execute o `aERP_Setup_1.0.0.exe`.
 
-> **Driver de ligação ao SQL Server:** o aERP liga-se ao PHC através do **Microsoft OLE DB Driver 18 para SQL Server**. Se este driver não estiver instalado, o teste de ligação dá o erro *"3706 - Não foi encontrado o fornecedor"*. O instalador verifica-o e, se faltar, instala-o no fim (versão de 64 bits, que inclui também a de 32 bits, ou de 32 bits num Windows de 32 bits). Só neste passo o Windows pede autorização de administrador. Se o computador não tiver permissões de administrador, peça ao responsável informático para instalar o driver (ficheiro `.zip` acima).
+> **Aviso do Windows ao descarregar e instalar:** o instalador do aERP ainda não tem assinatura digital, por isso o Windows e o navegador podem mostrar um aviso de que o ficheiro "não é habitualmente transferido" ou de que "o Windows protegeu o seu PC". Para continuar:
+> - No **Microsoft Edge**, na lista de transferências, escolha **…** > **Manter** > **Mostrar mais** > **Manter mesmo assim**.
+> - No ecrã azul do **Windows SmartScreen**, carregue em **Mais informações** > **Executar mesmo assim**.
+>
+> Descarregue o aERP apenas a partir desta página.
+
+> **Driver de ligação ao SQL Server:** o aERP liga-se ao PHC através do **Microsoft OLE DB Driver 18 para SQL Server**. Se este driver não estiver instalado, o teste de ligação dá o erro *"3706 - Não foi encontrado o fornecedor"*. O instalador verifica-o e, se faltar, instala-o no fim (versão de 64 bits, que inclui também a de 32 bits, ou de 32 bits num Windows de 32 bits). Só neste passo o Windows pede autorização de administrador. Se o computador não tiver permissões de administrador, peça ao responsável informático para instalar o driver a partir da [página oficial da Microsoft](https://learn.microsoft.com/sql/connect/oledb/download-oledb-driver-for-sql-server).
 
 > Dados sensíveis (servidor, base de dados, credenciais) são de demonstração nos materiais publicados.
 
@@ -71,5 +76,15 @@ Para descarregar, abra o ficheiro e carregue em **Download raw file** (ícone �
 Power Pivot (modelo, DAX) · Power Query (M) · funções CUBE e segmentações OLAP · VBA (formulários, ADO, eventos de livro) · SQL Server (PHC) · Inno Setup (instalador).
 
 ---
+
+## Licença, preço e suporte
+
+- **Gratuito na fase de lançamento:** nesta fase, o aERP pode ser instalado e usado sem custos, com a licença Standard e sem limitações.
+- **Mais tarde:** a licença Standard poderá passar a ter limitações e haverá uma licença Pro, paga, com todas as funcionalidades.
+- **Suporte:** josefilipe@jaj.pt
+
+---
+
+O aERP é uma ferramenta independente para PHC e não é um produto da PHC Software. PHC é uma marca da PHC Software. Microsoft, Excel e Power Pivot são marcas da Microsoft.
 
 _Todos os direitos reservados._
