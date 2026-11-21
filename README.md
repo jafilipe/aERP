@@ -4,6 +4,10 @@
 
 O **aERP** liga-se à base de dados SQL Server do PHC, carrega os dados de vendas, compras, clientes, fornecedores e artigos num modelo **Power Pivot** e apresenta-os em **dashboards interativos**, **folhas de consulta** e **comparações anuais** ao estilo do PHC. O utilizador configura a ligação uma vez, carrega em **Sincronizar dados** e trabalha só com botões e filtros.
 
+![Resumo do aERP](docs/img/aerp-resumo.png)
+
+*Resumo do aERP: visão geral das vendas, compras, clientes, fornecedores e stock, com filtro de Ano e Período e acesso a todos os dashboards.*
+
 ---
 
 ## O que faz
