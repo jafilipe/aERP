@@ -47,7 +47,8 @@ Sobre estes dados existem cerca de 76 medidas: vendas líquidas, compras líquid
 
 ### 4.1 Resumo e navegação
 - Página inicial com uma **visão geral** dos gráficos principais de cada dashboard.
-- Barra lateral com **logótipo e nome da empresa**, filtro de **Ano**, botões para todos os dashboards e consultas, **Configuração** e **Sincronizar dados**.
+- **Cartões de indicadores** do ano mais recente no topo do resumo.
+- Barra lateral com **logótipo e nome da empresa**, filtro de **Ano**, botão **Período**, botões para todos os dashboards e consultas, **Configuração** e **Sincronizar dados**.
 
 ### 4.2 Dashboards (7)
 Todos com o mesmo aspeto: fundo escuro, barra lateral com logótipo e empresa, cartões de indicadores e grelha de gráficos alinhada.
@@ -76,6 +77,7 @@ Outros pormenores:
 - O filtro **Ano** aceita um ou dois anos, e o ano escolhido passa para todas as folhas.
 - Com dois anos, **todos os gráficos comparam**: barras com duas séries, circulares com dois anéis e títulos "2026 vs 2025".
 - Os tops 10 são ordenados pelo ano mais recente.
+- Botão **Período** para analisar o **ano completo**, **até ao mês atual**, **até ao fim do mês**, um **trimestre** ou um **semestre**. As comparações usam o mesmo período nos dois anos e os títulos indicam o período escolhido.
 
 ### 4.5 Comparação anual ao estilo PHC
 - Tabela mês a mês nos dashboards de Vendas, Vendas por Artigo, Compras e Compras por Artigo.
@@ -85,6 +87,7 @@ Outros pormenores:
 
 ### 4.6 Consultas
 - Uma folha de consulta por tabela, com a lista completa e os mesmos filtros do dashboard correspondente.
+- **Ordenar por** qualquer coluna, de A a Z ou de Z a A, com opção para voltar à ordem original.
 - Cada consulta é criada só quando é aberta, para a sincronização ser rápida.
 
 ### 4.7 Segurança
@@ -96,7 +99,7 @@ Outros pormenores:
 
 ## 5. Instalação
 
-O instalador `aERP_Setup_1.0.0.exe` não precisa de administrador e:
+O instalador é distribuído no ficheiro `aERP_Setup_1.0.0.zip`: basta extraí-lo e executar o `aERP_Setup_1.0.0.exe`. O instalador não precisa de administrador e:
 - copia o livro, o suplemento e a lista de códigos postais para `Documentos\aERP`;
 - regista o suplemento no Excel e autoriza as macros da pasta do aERP;
 - cria os atalhos;
