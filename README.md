@@ -72,4 +72,4 @@ Power Pivot (modelo, DAX) · Power Query (M) · funções CUBE e segmentações 
 
 ---
 
-_Repositório privado. Todos os direitos reservados._
+_Todos os direitos reservados._
