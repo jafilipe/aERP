@@ -46,6 +46,11 @@ Sobre estes dados existem cerca de 76 medidas: vendas líquidas, compras líquid
 ## 4. Funcionalidades
 
 ### 4.1 Resumo e navegação
+
+![Resumo do aERP](img/aerp-resumo.png)
+
+*Ecrã Resumo: visão geral dos gráficos principais, barra lateral com a empresa, filtros e navegação.*
+
 - Página inicial com uma **visão geral** dos gráficos principais de cada dashboard.
 - **Cartões de indicadores** do ano mais recente no topo do resumo.
 - Barra lateral com **logótipo e nome da empresa**, filtro de **Ano**, botão **Período**, botões para todos os dashboards e consultas, **Configuração** e **Sincronizar dados**.
