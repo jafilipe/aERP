@@ -58,7 +58,7 @@ Para descarregar, abra o ficheiro e carregue em **Download raw file** (ícone �
 
 ## Requisitos
 
-- Windows com **Excel 365 / 2021 de 64 bits** (com Power Pivot).
+- Windows com **Microsoft 365 ou Excel 2024, de 64 bits** (com Power Pivot). O Excel 2016, 2019 e 2021 não são suportados: não têm as funções de matriz dinâmica usadas nos dashboards.
 - **Microsoft OLE DB Driver 18 para SQL Server** (instalado pelo `aERP_Setup` se faltar).
 - Acesso de rede ao **SQL Server do PHC**.
 - Ligação à Internet.
