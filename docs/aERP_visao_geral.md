@@ -113,7 +113,7 @@ O instalador é distribuído no ficheiro `aERP_Setup_1.0.0.zip`: basta extraí-l
 A desinstalação remove o registo.
 
 ### Requisitos
-- Windows com **Excel 365 / 2021 de 64 bits** (com Power Pivot).
+- Windows com **Microsoft 365 ou Excel 2024, de 64 bits** (com Power Pivot). O Excel 2016, 2019 e 2021 não são suportados: não têm as funções de matriz dinâmica usadas nos dashboards.
 - Acesso de rede ao **SQL Server do PHC**.
 - Ligação à Internet.
 
